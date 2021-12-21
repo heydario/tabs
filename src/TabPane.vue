@@ -22,40 +22,40 @@
 <script>
 const TS = {
   'fade': {
-    enterClass: 'fadeIn',
-    leaveClass: 'fadeOut'
+    enterClass: 'animate__animated animate__fadeIn',
+    leaveClass: 'animate__animated animate__fadeOut'
   },
   'fade-horizontal-rtl': {
-    enterClass: 'fadeInRight',
-    leaveClass: 'fadeOutLeft'
+    enterClass: 'animate__animated animate__fadeInRight',
+    leaveClass: 'animate__animated animate__fadeOutLeft'
   },
   'fade-horizontal-ltr': {
-    enterClass: 'fadeInLeft',
-    leaveClass: 'fadeOutRight'
+    enterClass: 'animate__animated animate__fadeInLeft',
+    leaveClass: 'animate__animated animate__fadeOutRight'
   },
   'slide-horizontal-rtl': {
-    enterClass: 'slideInRight',
-    leaveClass: 'slideOutLeft'
+    enterClass: 'animate__animated animate__slideInRight',
+    leaveClass: 'animate__animated animate__slideOutLeft'
   },
   'slide-horizontal-ltr': {
-    enterClass: 'slideInLeft',
-    leaveClass: 'slideOutRight'
+    enterClass: 'animate__animated animate__slideInLeft',
+    leaveClass: 'animate__animated animate__slideOutRight'
   },
   'fade-vertical-dtu': {
-    enterClass: 'fadeInUp',
-    leaveClass: 'fadeOutUp'
+    enterClass: 'animate__animated animate__fadeInUp',
+    leaveClass: 'animate__animated animate__fadeOutUp'
   },
   'fade-vertical-utd': {
-    enterClass: 'fadeInDown',
-    leaveClass: 'fadeOutDown'
+    enterClass: 'animate__animated animate__fadeInDown',
+    leaveClass: 'animate__animated animate__fadeOutDown'
   },
   'slide-vertical-dtu': {
-    enterClass: 'slideInUp',
-    leaveClass: 'slideOutUp'
+    enterClass: 'animate__animated animate__slideInUp',
+    leaveClass: 'animate__animated animate__slideOutUp'
   },
   'slide-vertical-utd': {
-    enterClass: 'slideInDown',
-    leaveClass: 'slideOutDown'
+    enterClass: 'animate__animated animate__slideInDown',
+    leaveClass: 'animate__animated animate__slideOutDown'
   }
 }
 
