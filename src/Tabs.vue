@@ -160,9 +160,9 @@ export default {
       }
     }
 
-    .tab-content {
-      margin: 30px 10px;
-    }
+    // .tab-content {
+    //   margin: 30px 10px;
+    // }
   }
   &.is-layout-right {
     flex-direction: row-reverse;
@@ -192,24 +192,24 @@ export default {
           }
         }
 
-        &.is-active {
-          a {
-            border-left-color: $turquoise;
-          }
-        }
+        // &.is-active {
+        //   a {
+        //     border-left-color: $turquoise;
+        //   }
+        // }
       }
     }
 
-    .tab-content {
-      margin: 30px 10px;
-    }
+    // .tab-content {
+    //   margin: 30px 10px;
+    // }
   }
 
   .tab-content {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    margin: 10px 30px;
+    // margin: 10px 30px;
     flex: 1 1;
   }
 
