@@ -1,11 +1,11 @@
 <template>
   <div :class="{ 'vue-bulma-tabs': true, [`is-layout-${layout}`]: true }">
-    <div  :class="{ tabs: true, [`is-${size}`]: size, [`is-${alignment}`]: alignment, [`is-${type}`]: type, 'is-fullwidth': isFullwidth }">
+    <div  :class="{ tabs: true, [`is-${size}`]: size, [`is-${alignment}`]: alignment, [`is-${type}`]: type, 'is-fullwidth': isFullwidth, 'is-toggle': isToggle }">
       <slot name="left-tab-list"></slot>
       <tab-list>
         <li v-for="(tab, index) in tabPanes"
           role="tab"
-          :class="{ 'is-active': isActived(index), 'is-disabled': tab.disabled, 'is-flex': true }"
+          :class="{ 'is-active': isActived(index), 'is-disabled': tab.disabled, 'is-flex': false }"
           :aria-selected="isActived(index) ? 'true' : 'false'"
           :aria-expanded="isActived(index) ? 'true' : 'false'"
           :aria-disabled="tab.disabled ? 'true' : 'false'"
@@ -20,7 +20,7 @@
       </tab-list>
       <slot name="right-tab-list"></slot>
     </div>
-    <div class="tab-content is-flex">
+    <div class="tab-content">
       <slot></slot>
     </div>
   </div>
@@ -36,6 +36,7 @@ export default {
 
   props: {
     isFullwidth: Boolean,
+    isToggle: Boolean,
     layout: {
       type: String,
       default: 'top',
